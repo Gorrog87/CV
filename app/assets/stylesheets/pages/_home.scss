@@ -1,14 +1,30 @@
-h1 {
-  color: rgb(231, 231, 231);
-}
-
 body {
   background-color: #010409;
   font-family: "Montserrat", sans-serif;
+  color: rgb(231, 231, 231);
+  opacity: 0.9;
 }
 
-.img {
+img {
   height: 200px;
   width: 200px;
   border-radius: 10%;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+}
+
+.header-picture {
+  margin-left: 10%;
+  margin-top: 8%;
+}
+
+.header-info {
+  margin-top: 8%;
+  margin-left: 5%;
 }
