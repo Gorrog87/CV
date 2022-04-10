@@ -13,10 +13,12 @@ img {
 
 ul {
   list-style: none;
+  display: inline-flex;
 }
 
 .header {
   display: flex;
+  justify-content: flex-start;
 }
 
 .header-picture {
