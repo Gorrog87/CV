@@ -16,9 +16,16 @@ ul {
   display: inline-flex;
 }
 
+h3 {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 5%;
 }
 
 .header-picture {
