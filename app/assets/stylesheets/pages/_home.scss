@@ -15,6 +15,17 @@ img {
 ul {
   list-style: none;
   display: inline-flex;
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: orange;
+  }
+
+  a:after {
+    color: bisque;
+  }
 }
 
 h3 {
