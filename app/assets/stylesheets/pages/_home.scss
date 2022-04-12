@@ -12,6 +12,12 @@ img {
   opacity: 0.7;
 }
 
+#pic {
+  .img-circle {
+    border-radius: 50%;
+  }
+}
+
 ul {
   list-style: none;
   display: inline-flex;
