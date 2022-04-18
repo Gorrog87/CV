@@ -80,23 +80,15 @@
       <h4>Driving license</h4>
     </div>
   </div>
-  <div class='button' id ='button'>
-    <a class='kawai' href="<%# Nyan Cat.mp3 %>" <%# onclick="play()" %>>Kawaï mode</a>
+  <div class='button'>
+    <a class='kawai'id ='kawaibtn' href="<%# Nyan Cat.mp3 %>" <%# onclick="play()" %>>Kawaï mode</a>
   </div>
+  <script>
+
+
+  const swichButton = document.getElementById('kawaibtn');
+    swichButton.addEventListener('click', function onClick(event) {
+      event.target.style.backgroundColor = 'pink';
+    });
+  </script>
 </body>
-
-
-
-<%# event listener to the kawaï button %>
-<script>
-
-
-const button = document.querySelector('kawai');
-const pinkBackground = function () {
-/*   this.classList.toggle('green');
- */}
-button.addEventListener('click', (event) => {
-  this.classList.toggle('green');
-});
-
-</script>
