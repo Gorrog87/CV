@@ -1,25 +1,38 @@
 .kawai {
-  padding: 5%;
   padding: 2%;
   background-color: #e78ea9;
+  color: #e78ea9;
   border-radius: 6px;
   box-shadow: 1px 1px 1px 1px;
   text-decoration: none;
-  color: #e78ea9;
-}
+  opacity: 0.1;
 
-.kawai:hover {
-  color: white;
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
 }
 
 .btn-list {
   color: #9ae66e;
-}
 
-a:visited {
-  opacity: 0.3;
+  &:visited {
+    opacity: 0.3;
+  }
 }
 /* TODO styling more the btns and go on the :active pseudo class that doesn't works */
-.button {
-  margin-top: 5%;
+
+.normalmode {
+  display: none;
+  padding: 2%;
+  background-color: #180a0a;
+  color: #180a0a;
+  height: 100%;
+  border-radius: 6%;
+  box-shadow: 1px 1px 1px 1px;
+  text-decoration: none;
+
+  &:hover {
+    color: antiquewhite;
+  }
 }
