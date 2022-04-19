@@ -1,3 +1,4 @@
+
 <body>
   <div class="header">
     <div class="header-picture">
@@ -67,7 +68,8 @@
   </div>
   <hr class='line'>
   <h3>Languages & hobbies</h3>
-  <hr class='line'><div class='languages'>
+  <hr class='line'>
+  <div class='languages'>
     <div>
       <h4>French : Native</h4>
       <h4>English : Fluent</h4>
@@ -81,13 +83,16 @@
       <h4>Driving license</h4>
     </div>
   </div>
-    <a class='kawai'id ='kawaibtn' href="<%# Nyan Cat.mp3 %>" <%# onclick="play()" %>>Kawaï mode</a>
+    <a class='kawai'id ='button' href="#" <%# onclick="play()" %>>Kawaï mode</a>
   <script>
+alert("triggered");
+  const kawaiMode = document.getElementById('button')
+  kawaiMode.addEventListener("click", (event) => {
+    console.log(event);
 
 
-  const swichButton = document.getElementById('kawaibtn');
-    swichButton.addEventListener('click', function onClick(event) {
-      event.body.style.backgroundColor = 'pink';
-    });
+});
+
+
   </script>
 </body>
