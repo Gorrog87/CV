@@ -83,16 +83,23 @@
       <h4>Driving license</h4>
     </div>
   </div>
-    <a class='kawai'id ='button' href="#" <%# onclick="play()" %>>Kawaï mode</a>
+    <a class='kawai'id ='button' href="#" src = 'https://www.youtube.com/watch?v=EErY75MXYXI' <%# onclick="play()" %> >Kawaï mode</a>
+</body>
   <script>
-alert("triggered");
-  const kawaiMode = document.getElementById('button')
-  kawaiMode.addEventListener("click", (event) => {
-    console.log(event);
+/* alert("triggered");
+ */ const kawaiMode = document.getElementById('button')
+    const fond = document.querySelector("body")
 
+function changeBackground() {
+  fond.style.backgroundColor ="pink"
+}
 
-});
+function playSong() {
+  return new Audio('/Nyan_cat.mp3').play();
+}
+
+kawaiMode.addEventListener("click", playSong)
+console.log(kawaiMode);
 
 
   </script>
-</body>
