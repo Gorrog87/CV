@@ -87,20 +87,20 @@
 </body>
   <script data-turbolinks-eval="false">
 
-/* alert("triggered");
- */ const kawaiMode = document.getElementById('button')
-    const fond = document.querySelector("body")
+  /* const kawaiMode = document.getElementById('button') */
+  const background = document.querySelector("body")
+
+  background.addEventListener("click", changeBackground)
+  console.log(background);
 
 function changeBackground() {
-  fond.style.backgroundColor ="pink"
+  background.style.backgroundColor ="pink"
 }
 
 /* function playSong() {
   return new Audio('/Nyan_cat.mp3').play();
 }
  */
-/* kawaiMode.addEventListener("click", playSong)
-console.log(kawaiMode); */
 
 
   </script>
