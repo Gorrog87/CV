@@ -83,26 +83,22 @@
       <h4>Driving license</h4>
     </div>
   </div>
-    <button class='kawai'id ='button_kawai' src = 'https://www.youtube.com/watch?v=EErY75MXYXI' <%# onclick="play()" %> >Kawaï mode</button>
+    <button class='kawai' class="normalmode" id ='button_kawai' src = 'https://www.youtube.com/watch?v=EErY75MXYXI' <%# onclick="play()" %> >Kawaï mode</button>
 </body>
   <script data-turbolinks-eval="false">
 
 /* const normal = document.querySelector('.normalmode')
 console.log(normal); */
 
-  const kawaiMode = document.getElementById('button_kawai');
+  const kawaiMode = document.querySelector('.kawai');
   kawaiMode.addEventListener("click", pinkBackground);
   /* kawaiMode.addEventListener("click", classicMode); */
   console.log(kawaiMode);
 
-  /* const normalMode = document.getElementById('button_normal')
-  normalMode.addEventListener('click', normalBackground) */
-/*   console.log(normalBackground);
- */
-
 function pinkBackground() {
   document.body.style.backgroundColor = "pink";
   kawaiMode.innerText = "Back to normal mode";
+  kawaiMode.style.backgroundColor = '#0D1117'
 }
 
 /* function classicMode() {
@@ -110,17 +106,7 @@ function pinkBackground() {
   kawaiMode.innerText = "Kawai mode";
 } */
 
-
-/* if (document.body.style.backgroundColor = "pink") {
-  kawaiMode.innerText = "Back to normal mode";
-} else {
-
-} */
-
 /* function playSong() {
   return new Audio('/Nyan_cat.mp3').play();       <-----------ici voir comment implémenter un fichier son et le lire
 } */
-
-
-
   </script>
