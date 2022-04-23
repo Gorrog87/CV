@@ -90,33 +90,31 @@
 /* const normal = document.querySelector('.normalmode')
 console.log(normal); */
 
-  const kawaiMode = document.getElementById('button_kawai')
-  kawaiMode.addEventListener("click", pinkBackground, classicMode)
+  const kawaiMode = document.getElementById('button_kawai');
+  kawaiMode.addEventListener("click", pinkBackground);
+  /* kawaiMode.addEventListener("click", classicMode); */
   console.log(kawaiMode);
 
   /* const normalMode = document.getElementById('button_normal')
   normalMode.addEventListener('click', normalBackground) */
 /*   console.log(normalBackground);
  */
-/* function normalBackground() {
-  document.body.style.backgroundColor = "#180A0A"
-  } */
 
 function pinkBackground() {
-  document.body.style.backgroundColor ="pink";
+  document.body.style.backgroundColor = "pink";
   kawaiMode.innerText = "Back to normal mode";
 }
 
-function classicMode() {
-  document.body.style.backgroundColor ="#180A0A";
+/* function classicMode() {
+  document.body.style.backgroundColor = "#0D1117";
   kawaiMode.innerText = "Kawai mode";
-}
+} */
 
 
-/* if () {
-  normal.style.display = ""                      <-------- ici voir comment bien écrire la conditionnelle
-  else
-  normal.style.display = "none"
+/* if (document.body.style.backgroundColor = "pink") {
+  kawaiMode.innerText = "Back to normal mode";
+} else {
+
 } */
 
 /* function playSong() {
