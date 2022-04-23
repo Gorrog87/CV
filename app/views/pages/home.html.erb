@@ -12,8 +12,8 @@
           <li style='padding-left: 15%;'><a class='btn-list' href="https://www.reddit.com/user/Gorrogue" target="_blank">Reddit</a></li>
           <li style='padding-left: 15%;'><a class='btn-list' href="https://stackoverflow.com/users/18511611/maxime-gourgues" target="_blank">Stackoverflow</a></li>
         </ul>
-    </div>
-      <button href="" class="normalmode" id="button_normal">Normal mode</button>
+  </div>
+    <button class="normalmode" id="button_normal">Back to normal mode</button>
   </div>
   <hr class='line'>
   <h3>Experiences</h3>
@@ -87,16 +87,40 @@
 </body>
   <script data-turbolinks-eval="false">
 
+/* const normal = document.querySelector('.normalmode')
+console.log(normal); */
+
   const kawaiMode = document.getElementById('button_kawai')
-  kawaiMode.addEventListener("click", changeBackground)
+  kawaiMode.addEventListener("click", pinkBackground, classicMode)
   console.log(kawaiMode);
 
-function changeBackground() {
-  document.body.style.backgroundColor ="pink"
+  /* const normalMode = document.getElementById('button_normal')
+  normalMode.addEventListener('click', normalBackground) */
+/*   console.log(normalBackground);
+ */
+/* function normalBackground() {
+  document.body.style.backgroundColor = "#180A0A"
+  } */
+
+function pinkBackground() {
+  document.body.style.backgroundColor ="pink";
+  kawaiMode.innerText = "Back to normal mode";
 }
 
+function classicMode() {
+  document.body.style.backgroundColor ="#180A0A";
+  kawaiMode.innerText = "Kawai mode";
+}
+
+
+/* if () {
+  normal.style.display = ""                      <-------- ici voir comment bien écrire la conditionnelle
+  else
+  normal.style.display = "none"
+} */
+
 /* function playSong() {
-  return new Audio('/Nyan_cat.mp3').play();
+  return new Audio('/Nyan_cat.mp3').play();       <-----------ici voir comment implémenter un fichier son et le lire
 } */
 
 
