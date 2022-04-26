@@ -86,7 +86,7 @@ h3 {
   flex-wrap: wrap;
   position: relative;
 
-/* @mixin outline-out {
+  /* @mixin outline-out {
   $outerBorderWidth: 4px;
   $innerBorderWidth: 4px;
 
@@ -124,6 +124,27 @@ h3 {
   align-items: center;
   margin-top: 3%;
   flex-wrap: wrap;
+}
+
+.title-icon-pair {
+  display: flex;
+  align-items: center;
+
+  #html {
+    color: #dd4b25;
+  }
+
+  #css {
+    color: #254bdd;
+  }
+
+  #js {
+    color: #efd81d;
+  }
+
+  #git {
+    color: #E84E31;
+  }
 }
 
 @media screen and (max-width: 320px) {
