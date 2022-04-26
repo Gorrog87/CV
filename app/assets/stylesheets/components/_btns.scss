@@ -10,14 +10,20 @@
   &:hover {
     color: white;
     opacity: 1;
+    transition-timing-function: ease-in-out;
   }
 }
 
 .btn-list {
-  color: #9ae66e;
+  color: #92ba92;
 
   &:visited {
     opacity: 0.3;
+  }
+
+  &:hover {
+    color: rgba(255, 166, 0, 0.674);
+    transition: ease;
   }
 }
 /* TODO styling more the btns and go on the :active pseudo class that doesn't works */
@@ -34,5 +40,12 @@
 
   &:hover {
     color: antiquewhite;
+  }
+}
+
+.fab {
+  &:hover {
+    transform: translateY(-4px);
+    transition-timing-function: ease-in;
   }
 }
