@@ -143,11 +143,76 @@ h3 {
   }
 
   #git {
-    color: #E84E31;
+    color: #e84e31;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .header {
+    justify-content: center;
+
+    .header-picture {
+      margin-left: unset;
+      margin-top: 5%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      display: inline-flex;
+      justify-content: center;
+      gap: 15%;
+      margin-left: 23%;
+    }
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2rem;
+
+    h5 {
+      margin-top: 2%;
+      margin-bottom: 15%;
+      margin-right: 3%;
+    }
+
+    .title-icon-pair {
+      flex-flow: column;
+    }
+  }
+
+  .soft-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    h5 {
+    }
+  }
+
+  .languages {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5%;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
