@@ -56,6 +56,11 @@ h3 {
 .experience {
   text-align: center;
 
+ /*  &:hover {
+   visibility: hidden
+    seems fragile in dev envirenement, will try later in prod.
+  } */
+
   #skills {
     text-align: center;
     margin: 5%;
@@ -147,6 +152,14 @@ h3 {
   }
 }
 
+.soft-skills {
+  margin: 0% 0%;
+
+  h5 {
+    margin: 5% 0%;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header {
     justify-content: center;
@@ -198,9 +211,6 @@ h3 {
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-
-    h5 {
-    }
   }
 
   .languages {
