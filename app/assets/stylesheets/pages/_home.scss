@@ -141,7 +141,7 @@ h3 {
   #bubble {
     color: #acacac;
   }
-  #hands{
+  #hands {
     color: #acacac;
   }
 }
@@ -152,6 +152,10 @@ h3 {
   h5 {
     margin: 5% 0%;
   }
+}
+
+.flag-title-pair {
+  display: flex;
 }
 
 @media screen and (max-width: 320px) {
