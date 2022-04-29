@@ -144,6 +144,18 @@ h3 {
   #hands {
     color: #acacac;
   }
+
+  #golf {
+    color: #acacac;
+  }
+
+  #car {
+    color: #acacac;
+  }
+
+  #water {
+    color: #acacac;
+  }
 }
 
 .soft-skills {
@@ -156,6 +168,11 @@ h3 {
 
 .flag-title-pair {
   display: flex;
+  justify-content: space-around;
+}
+
+#esp {
+  gap: 1em;
 }
 
 @media screen and (max-width: 320px) {
