@@ -5,6 +5,6 @@ class CvController < ApplicationController
   end
 
   def show
-    @cv = CV.first
+    @cv = CV.first[:id]
   end
 end
