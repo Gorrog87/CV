@@ -1,24 +1,10 @@
-@mixin icon-float {
-	@include hacks();
-	@include prefixed(transition-duration, $mediumDuration);
-
-	.hvr-icon {
-		@include prefixed(transform, translateZ(0));
-		@include prefixed(transition-duration, $mediumDuration);
-		@include prefixed(transition-property, transform);
-		@include prefixed(transition-timing-function, ease-out);
-	}
-
-	&:hover,
-	&:focus,
-	&:active {
-
-		.hvr-icon {
-			@include prefixed(transform, translateY(-4px));
-		}
-	}
-}
-
-.fab{
+.fab,
+.fas,
+.fad,
+.far {
   margin: 15% 15%;
+  &:hover {
+    transform: translateY(-4px);
+    transition-timing-function: ease-in;
+  }
 }

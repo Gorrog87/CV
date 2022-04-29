@@ -56,7 +56,7 @@ h3 {
 .experience {
   text-align: center;
 
- /*  &:hover {
+  /*  &:hover {
    visibility: hidden
     seems fragile in dev envirenement, will try later in prod.
   } */
@@ -90,39 +90,10 @@ h3 {
   margin-top: 5%;
   flex-wrap: wrap;
   position: relative;
-
-  /* @mixin outline-out {
-  $outerBorderWidth: 4px;
-  $innerBorderWidth: 4px;
-
-  @include hacks();
-  position: relative;
-
-
-    &:before {
-      content: "";
-      position: absolute;
-      border: $primaryColor solid $outerBorderWidth;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      @include prefixed(transition-duration, 0.3s);
-      @include prefixed(transition-property, "top, right, bottom, left");
-    }
-
-    &:hover:before,
-    &:focus:before,
-    &:active:before {
-      top: -($outerBorderWidth + $innerBorderWidth);
-      right: -($outerBorderWidth + $innerBorderWidth);
-      bottom: -($outerBorderWidth + $innerBorderWidth);
-      left: -($outerBorderWidth + $innerBorderWidth);
-    }
-  } */
 }
 
-.skills {
+.skills,
+.soft-skills {
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -149,6 +120,29 @@ h3 {
 
   #git {
     color: #e84e31;
+  }
+
+  #sql {
+    color: #31648c;
+  }
+
+  #ruby {
+    color: #ae1003;
+  }
+
+  #heroku {
+    color: #634987;
+  }
+
+  #pen {
+    color: #acacac;
+  }
+
+  #bubble {
+    color: #acacac;
+  }
+  #hands{
+    color: #acacac;
   }
 }
 
@@ -186,7 +180,8 @@ h3 {
     }
   }
 
-  .skills {
+  .skills,
+  .soft-skills {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,14 +198,6 @@ h3 {
     .title-icon-pair {
       flex-flow: column;
     }
-  }
-
-  .soft-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
   }
 
   .languages {
