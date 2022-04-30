@@ -14,8 +14,14 @@
   }
 }
 
+a {
+-webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
+}
 .btn-list {
   color: #92ba92;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 
   &:visited {
     opacity: 0.3;
@@ -24,7 +30,8 @@
   &:hover {
     color: rgba(255, 166, 0, 0.674);
     transition: ease;
-    -webkit-transition: width 128ms linear, height 128ms linear;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 }
 /* TODO styling more the btns and go on the :active pseudo class that doesn't works */
