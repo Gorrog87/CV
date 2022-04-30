@@ -12,10 +12,11 @@ img {
   opacity: 0.7;
 }
 
-#pic {
-  .img-circle {
-    border-radius: 50%;
-  }
+h3 {
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -27,13 +28,6 @@ ul {
   a {
     text-decoration: none;
   }
-}
-
-h3 {
-  margin: 2%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .header {
@@ -51,23 +45,22 @@ h3 {
 .header-info {
   margin-top: 8%;
   margin-left: 5%;
+  h4 {
+    font-family: roboto monospace;
+    font-weight: 500;
+  }
 }
 
 .experience {
   text-align: center;
-
-  /*  &:hover {
-   visibility: hidden
-    seems fragile in dev envirenement, will try later in prod.
-  } */
-
-  #skills {
-    text-align: center;
-    margin: 5%;
+  h4 {
+    font-family: roboto monospace;
+    font-weight: 500;
   }
 
   h2 {
     padding-top: 2%;
+    font-weight: 100;
   }
 
   ul {
@@ -92,6 +85,22 @@ h3 {
   position: relative;
 }
 
+.soft-skills {
+  margin: 0% 0%;
+
+  h5 {
+    margin: 5% 0%;
+  }
+}
+
+.flag-title-pair {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h4 {
+    font-weight: 100;
+  }
+}
 .skills,
 .soft-skills {
   display: flex;
@@ -105,6 +114,10 @@ h3 {
 .title-icon-pair {
   display: flex;
   align-items: center;
+
+  h5 {
+    font-weight: 100;
+  }
 
   #html {
     color: #dd4b25;
@@ -158,25 +171,25 @@ h3 {
   }
 }
 
-.soft-skills {
-  margin: 0% 0%;
-
-  h5 {
-    margin: 5% 0%;
+#pic {
+  .img-circle {
+    border-radius: 50%;
   }
-}
-
-.flag-title-pair {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 #esp {
   gap: 1em;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px), (max-width: 480px) {
+  hr,
+  #heroku {
+    margin-top: 5%;
+  }
+
+  h3 {
+    text-align: center;
+  }
   .header {
     justify-content: center;
 
@@ -231,66 +244,38 @@ h3 {
     flex-wrap: nowrap;
     flex-direction: column;
   }
-}
 
-@media screen and (max-width: 480px) {
+  .title-icon-pair .fas {
+    padding: 0;
+    margin: 0;
+  }
+
+  .title-icon-pair .far {
+    padding: 0;
+    margin: 0;
+  }
+}
+/* --------------- unseted ----------- */
+@media screen and (min-width: 481px), (max-width: 600px) {
   .header {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
 
     .header-picture {
       margin-left: unset;
       margin-top: 5%;
     }
 
-    h1 {
-      text-align: center;
-    }
-
+    h1,
     h4 {
       text-align: center;
     }
-
-    ul {
-      list-style: none;
-      display: inline-flex;
-      justify-content: center;
-      gap: 15%;
+    .header-info ul {
       margin-left: 23%;
     }
   }
-
-  .skills,
-  .soft-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 2rem;
-
-    h5 {
-      margin-top: 2%;
-      margin-bottom: 15%;
-      margin-right: 3%;
-    }
-
-    .title-icon-pair {
-      flex-flow: column;
-    }
-  }
-
-  .languages {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    margin-top: 5%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 600px) {
 }
 
 @media screen and (max-width: 768px) {
