@@ -24,6 +24,7 @@
   &:hover {
     color: rgba(255, 166, 0, 0.674);
     transition: ease;
+    -webkit-transition: width 128ms linear, height 128ms linear;
   }
 }
 /* TODO styling more the btns and go on the :active pseudo class that doesn't works */
