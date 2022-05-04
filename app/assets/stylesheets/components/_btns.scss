@@ -15,8 +15,8 @@
 }
 
 a {
--webkit-transform: translate3d(0, 0, 0);
- transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .btn-list {
   color: #92ba92;
@@ -51,9 +51,18 @@ a {
   }
 }
 
-.english-btn {
+.language-btn {
   justify-content: flex-end;
   display: flex;
+  a {
+    padding: 0.2%;
+    text-decoration: none;
+    color: #acacac;
+    border-radius: 15%;
+    font-family: "Montserrat";
+    background-color: #535a6a;
+    box-shadow: 1px 1px 1px;
+  }
 }
 
 button {
