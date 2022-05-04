@@ -62,6 +62,9 @@ a {
     font-family: "Montserrat";
     background-color: #535a6a;
     box-shadow: 1px 1px 1px;
+    &:active{
+      box-shadow: unset;
+    }
   }
 }
 
