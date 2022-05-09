@@ -1,6 +1,6 @@
 body {
   background-color: #29303c;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   color: #acacac;
   margin: 5%;
 }
@@ -46,7 +46,7 @@ ul {
   margin-top: 8%;
   margin-left: 5%;
   h4 {
-    font-family: roboto, sans-serif;
+    font-family: roboto;
     font-weight: 500;
   }
 }
@@ -54,7 +54,7 @@ ul {
 .experience {
   text-align: center;
   h4 {
-    font-family: roboto sans-serif;
+    font-family: roboto;
     font-weight: 500;
   }
 
@@ -133,14 +133,17 @@ ul {
 
   #git {
     color: #e84e31;
+    margin-right: 0%;
   }
 
   #sql {
     color: #31648c;
+    margin-right: 20%;
   }
 
   #ruby {
     color: #ae1003;
+    margin-right: 8%;
   }
 
   #heroku {
@@ -149,6 +152,11 @@ ul {
 
   #pen {
     color: #acacac;
+    margin-right: 0%;
+  }
+
+  #roll{
+    margin-right: 25;
   }
 
   #bubble {
@@ -156,6 +164,7 @@ ul {
   }
   #hands {
     color: #acacac;
+    margin-right: 3%;
   }
 
   #golf {
