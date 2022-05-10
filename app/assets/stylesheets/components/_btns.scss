@@ -10,7 +10,6 @@
   }
 }
 
-
 .kawai {
   padding: 2%;
   background-color: #e78ea9;
@@ -20,7 +19,7 @@
   text-decoration: none;
   opacity: 0.1;
 
-   // for shine & gradient effects to work
+  // for shine & gradient effects to work
   position: relative;
   overflow: hidden;
   // for background color shift
@@ -32,7 +31,7 @@
 
   // psuedo-element shine animation left side
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     background: rgba(255, 255, 255, 0.5);
@@ -45,7 +44,7 @@
 
   // psuedo-element shine animation right side
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
@@ -129,4 +128,10 @@ a {
 
 button {
   border-radius: 6px;
+}
+
+#english-button,
+#french-button {
+  border-radius: 25%;
+  box-shadow: unset;
 }
